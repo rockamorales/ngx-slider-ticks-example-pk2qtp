@@ -1,0 +1,8 @@
+<ngx-slider [(value)]="value" [options]="options">
+	<ng-template #tooltipTemplate let-tooltip="tooltip" let-placement="bottom" let-content="content">
+		<!-- TODO: provide tooltip around the content.
+         {{tooltip}} will bind to the tooltip text
+         {{placement}} will bind to the tooltip placement ('top', 'bottom', 'right', 'left') -->
+		<div>{{content}}</div>
+	</ng-template>
+</ngx-slider>
